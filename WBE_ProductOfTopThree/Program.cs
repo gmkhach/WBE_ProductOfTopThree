@@ -1,8 +1,13 @@
-﻿using System;
+﻿/*
+ * Find the product of the highest 3 numbers of an input array
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 
 namespace WBE_ProductOfTopThree
 {
@@ -33,6 +38,7 @@ namespace WBE_ProductOfTopThree
             int max1 = 0;
             int max2 = 0;
             int max3 = 0;
+            // compares every number in the array with each other and picks the top three
             foreach (var n in arr)
             {
                 if (n > max1)
